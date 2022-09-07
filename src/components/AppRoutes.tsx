@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Users from '../pages/Users'
-import Posts from '../pages/Posts'
 import Main from '../pages/Main'
 import Context from '../context/context'
+import User from '../pages/User'
 
 const AppRoutes = () => {
   const {isLoginUser} = useContext(Context);
@@ -11,7 +11,7 @@ const AppRoutes = () => {
   isLoginUser ?
     <Routes>
         <Route path="users" element={<Users/>}/>
-        <Route path="posts" element={<Posts/>}/>
+        <Route path='users/:id' element={<User/>}/>
         <Route path="*" element={<Main/>}/>
     </Routes>
 

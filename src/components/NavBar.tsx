@@ -16,10 +16,7 @@ const NavBar = () => {
           <>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link" to="users">Users</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="posts">Posts</Link>
+                <Link className="nav-link" to="users">Products</Link>
               </li>
             </ul>
             <button className='btn btn-primary' onClick={() => logout()}>LogOut</button>

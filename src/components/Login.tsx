@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import http from '../http';
+import http from '../https';
 import { useContext } from 'react';
 import Context from '../context/context';
 
