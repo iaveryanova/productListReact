@@ -20,10 +20,16 @@ const User = () => {
   console.log(id);
   return (
     <div>
-      <h1>Information about product {id}</h1>
-      <div>{user.title}</div>
-      <div>{user.category}</div>
-      <div>{user.description}</div>
+      <h3>Information about product {user.title}</h3>
+      <div>Category: {user.category}</div>
+      <div>Description: {user.description}</div>
+      <div>Price: {user.price}</div>
+      <div>Discount Percentage: {user.discountPercentage}</div>
+      <div>Rating: {user.rating}</div>
+      <div>Stock: {user.stock}</div>
+      <div>Brand: {user.brand}</div>
+      <div>Category: {user.category}</div>
+      <div>Thumbnail: {user.thumbnail}</div>
       <img src={user.images[0]}/>
     </div>
   );
