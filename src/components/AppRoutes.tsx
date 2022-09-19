@@ -4,6 +4,7 @@ import Users from '../pages/Users'
 import Main from '../pages/Main'
 import Context from '../context/context'
 import User from '../pages/User'
+import PersonalData from '../pages/PersonalData'
 
 const AppRoutes = () => {
   const {isLoginUser} = useContext(Context);
@@ -13,6 +14,7 @@ const AppRoutes = () => {
         <Route path="users" element={<Users/>}/>
         <Route path='users/:id' element={<User/>}/>
         <Route path="*" element={<Main/>}/>
+        <Route path="personalData" element={<PersonalData/>}/>
     </Routes>
 
     :
